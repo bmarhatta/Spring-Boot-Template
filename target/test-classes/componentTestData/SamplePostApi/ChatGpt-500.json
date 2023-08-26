@@ -1,0 +1,14 @@
+{
+  "testName" : "ChatGpt500",
+  "testDescription" : "chatGpt system returns a 500",
+  "url": "/v1/template/post",
+  "requestDbResults": null,
+  "requestJson": "What is the capital of South Carolina, USA",
+  "pathVariables": null,
+  "requestHeaders": {
+    "Authorization": "inValidAuthToken",
+    "Content-Type": "application/json"
+  },
+  "responseStatus": "503 SERVICE_UNAVAILABLE",
+  "responseJson": "Downstream error"
+}

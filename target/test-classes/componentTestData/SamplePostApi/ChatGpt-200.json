@@ -1,0 +1,21 @@
+{
+  "testName" : "ChatGpt200",
+  "testDescription" : "chatGpt system returns a 200",
+  "url": "/v1/template/post",
+  "requestDbResults": null,
+  "requestJson": "What is the capital of Georgia, USA",
+  "pathVariables": null,
+  "requestHeaders": {
+    "Authorization": "validAuthToken",
+    "Content-Type": "application/json"
+  },
+  "responseStatus": "200 OK",
+  "responseJson": "Atlanta",
+  "responseDbResults": [
+    {
+      "id": null,
+      "aiRequest": "What is the capital of Georgia, USA",
+      "aiResponse": "Atlanta"
+    }
+  ]
+}

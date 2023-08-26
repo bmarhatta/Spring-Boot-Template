@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/completions",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "model": "text-davinci-003",
+          "prompt": "What is the capital of South Carolina, USA",
+          "max_tokens": 100,
+          "temperature": 0.02,
+          "top_p": 0,
+          "n": 0,
+          "stream": false,
+          "logprobs": null,
+          "stop": null
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 500,
+    "jsonBody": {
+      "error": "System failed"
+    }
+  }
+}

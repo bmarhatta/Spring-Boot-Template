@@ -1,0 +1,16 @@
+bishwo/WritingTestCases/Entity/OpenAiTable.class
+bishwo/WritingTestCases/Entity/OpenApiResponse/OpenAiResponse$OpenAiResponseBuilder.class
+bishwo/WritingTestCases/transformer/OpenAiTransformer.class
+bishwo/WritingTestCases/Controller/Controller.class
+bishwo/WritingTestCases/Entity/OpenApiResponse/OpenAiResponse.class
+bishwo/WritingTestCases/Entity/OpenAiTable$OpenAiTableBuilder.class
+bishwo/WritingTestCases/Client/BaseClient.class
+bishwo/WritingTestCases/Repository/OpenAiTableDbRepo.class
+bishwo/WritingTestCases/BishwoMainApp.class
+bishwo/WritingTestCases/Entity/OpenAiRequest$OpenAiRequestBuilder.class
+bishwo/WritingTestCases/GateWay/Gateway.class
+bishwo/WritingTestCases/Entity/OpenApiResponse/Usage.class
+bishwo/WritingTestCases/Entity/OpenApiResponse/Choice.class
+bishwo/WritingTestCases/Entity/OpenAiRequest.class
+bishwo/WritingTestCases/Config/Beans.class
+bishwo/WritingTestCases/Services/OpenAiServices.class

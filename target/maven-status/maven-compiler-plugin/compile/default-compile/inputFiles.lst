@@ -1,0 +1,14 @@
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Client/BaseClient.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Repository/OpenAiTableDbRepo.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/transformer/OpenAiTransformer.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Entity/OpenAiTable.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/BishwoPersonalWireMock.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Controller/Controller.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Services/OpenAiServices.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Entity/OpenApiResponse/OpenAiResponse.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Config/Beans.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Entity/OpenApiResponse/Choice.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/GateWay/Gateway.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Entity/OpenApiResponse/Usage.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/Entity/OpenAiRequest.java
+/Users/bishwomarhatta/newJobProject/Spring-Boot-Template/src/main/java/bishwo/WritingTestCases/BishwoMainApp.java

@@ -1,0 +1,46 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/completions",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "model": "text-davinci-003",
+          "prompt": "What is the capital of Georgia, USA",
+          "max_tokens": 100,
+          "temperature": 0.02,
+          "top_p": 0,
+          "n": 0,
+          "stream": false,
+          "logprobs": null,
+          "stop": null
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "id": "cmpl-uqkvlQyYK7bGYrRHQ0eXlWi7",
+      "object": "text_completion",
+      "created": 1589478378,
+      "model": "text-davinci-003",
+      "choices": [
+        {
+          "text": "Atlanta",
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "length"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5,
+        "completion_tokens": 7,
+        "total_tokens": 12
+      }
+    }
+  }
+}

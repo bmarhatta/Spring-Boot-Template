@@ -1,0 +1,14 @@
+{
+  "testName" : "ChatGpt400",
+  "testDescription" : "chatGpt system returns a 400",
+  "url": "/v1/template/post",
+  "requestDbResults": null,
+  "requestJson": "What is the capital of North Carolina, USA",
+  "pathVariables": null,
+  "requestHeaders": {
+    "Authorization": "inValidAuthToken",
+    "Content-Type": "application/json"
+  },
+  "responseStatus": "400 BAD_REQUEST",
+  "responseJson": "Invalid Request"
+}

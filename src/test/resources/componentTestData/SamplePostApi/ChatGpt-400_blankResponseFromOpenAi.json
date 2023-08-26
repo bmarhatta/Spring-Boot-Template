@@ -1,0 +1,14 @@
+{
+  "testName" : "ChatGpt400 blank response from chatGpt",
+  "testDescription" : "chatGpt system returns a 200 but with a empty body",
+  "url": "/v1/template/post",
+  "requestDbResults": null,
+  "requestJson": "What is the capital of Florida, USA",
+  "pathVariables": null,
+  "requestHeaders": {
+    "Authorization": "validAuthToken",
+    "Content-Type": "application/json"
+  },
+  "responseStatus": "400 BAD_REQUEST",
+  "responseJson": "openAi response is blank"
+}
