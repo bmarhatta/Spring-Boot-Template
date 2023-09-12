@@ -8,7 +8,7 @@
           http://www.springframework.org/schema/integration
           http://www.springframework.org/schema/integration/spring-integration.xsd">
 
-    <int:gateway id="bringgGateway" service-interface="bishwo.springboot.template.gateway.Gateway">
+    <int:gateway id="templateGateWay" service-interface="bishwo.springboot.template.gateway.Gateway">
         <int:method name="springIntegrationExample" request-channel="chain1"/>
 <!--        <int:method name="fetchFromInMemDB" request-channel="chain2"/>-->
     </int:gateway>

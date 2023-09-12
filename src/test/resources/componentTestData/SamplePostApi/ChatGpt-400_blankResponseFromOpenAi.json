@@ -3,7 +3,9 @@
   "testDescription" : "chatGpt system returns a 200 but with a empty body",
   "url": "/v1/template/post",
   "requestDbResults": null,
-  "requestJson": "What is the capital of Florida, USA",
+  "requestJson": {
+    "request": "What is the capital of Florida, USA"
+  },
   "pathVariables": null,
   "requestHeaders": {
     "Authorization": "validAuthToken",

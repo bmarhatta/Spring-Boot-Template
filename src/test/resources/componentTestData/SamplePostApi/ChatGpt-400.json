@@ -3,7 +3,9 @@
   "testDescription" : "chatGpt system returns a 400",
   "url": "/v1/template/post",
   "requestDbResults": null,
-  "requestJson": "What is the capital of North Carolina, USA",
+  "requestJson": {
+    "request": "What is the capital of North Carolina, USA"
+  },
   "pathVariables": null,
   "requestHeaders": {
     "Authorization": "inValidAuthToken",

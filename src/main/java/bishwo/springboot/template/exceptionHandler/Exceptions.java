@@ -13,8 +13,7 @@ public class Exceptions {
     @ExceptionHandler(value = {Exception.class})
     public ResponseEntity<String> exceptionHandler(Exception e) {
         String message = e.getMessage();
-        log.error("Stack Trace = ", e.getStackTrace());
-        log.error("detailed message = ", message);
+        log.error("detailed message = {}", message);
         if (e instanceof Template500Exception) {
             return new ResponseEntity<>(message, HttpStatus.SERVICE_UNAVAILABLE);
         }

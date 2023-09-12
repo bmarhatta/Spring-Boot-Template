@@ -1,6 +1,7 @@
 package bishwo.springboot.template.ComponentTest.ParameterizedTest.Entity;
 
 import bishwo.springboot.template.entity.entitys.OpenAiTable;
+import bishwo.springboot.template.entity.postRequeat.PostRequest;
 import lombok.Data;
 
 import java.util.List;
@@ -13,7 +14,7 @@ public class TestData {
     String url;
     List<OpenAiTable> requestDbResults;
     List<String> pathVariables;
-    String requestJson;
+    PostRequest requestJson;
     Map<String, String> requestHeaders;
     String responseStatus;
     String responseJson;

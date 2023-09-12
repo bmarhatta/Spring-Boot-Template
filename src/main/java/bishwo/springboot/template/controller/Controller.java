@@ -1,5 +1,6 @@
 package bishwo.springboot.template.controller;
 
+import bishwo.springboot.template.entity.postRequeat.PostRequest;
 import bishwo.springboot.template.gateway.Gateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,9 +17,9 @@ public class Controller {
     Gateway gateway;
 
     @PostMapping(value = "/post")
-    public ResponseEntity<String> samplePost(@RequestBody final String basicString,
+    public ResponseEntity<String> samplePost(@RequestBody final PostRequest postRequest,
                                              @RequestHeader(name = AUTH) final String auth) {
-        String response = this.gateway.springIntegrationExample(basicString, auth);
+        String response = this.gateway.springIntegrationExample(postRequest.getRequest(), auth);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

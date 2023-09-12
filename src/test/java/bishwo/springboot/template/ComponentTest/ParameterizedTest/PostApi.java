@@ -12,7 +12,7 @@ import wiremock.com.fasterxml.jackson.core.JsonProcessingException;
 import java.io.IOException;
 import java.util.stream.Stream;
 
-public class PostApi extends BaseTest {
+class PostApi extends BaseTest {
 
     private static final String POST = "src/test/resources/componentTestData/SamplePostApi";
 
@@ -34,7 +34,7 @@ public class PostApi extends BaseTest {
         this.dbSetUp(data.getRequestDbResults());
 
         final HttpEntity httpEntity = new HttpEntity(data.getRequestJson(), this.setHeaders(data.getRequestHeaders()));
-        final ResponseEntity response = restTemplate.exchange("/v1/template/post", HttpMethod.POST, httpEntity, String.class);
+        final ResponseEntity<String> response = restTemplate.exchange("/v1/template/post", HttpMethod.POST, httpEntity, String.class);
         if (response.getStatusCode().toString().equals("200 OK")) {
             this.assert200Response(response.getBody().toString(), data.getResponseJson(), String.class);
         } else {
@@ -44,9 +44,5 @@ public class PostApi extends BaseTest {
         if (data.getResponseDbResults() != null) {
             this.assertDb(data.getResponseDbResults());
         }
-    }
-
-    void testSituationThatRequireAMock () {
-
     }
 }

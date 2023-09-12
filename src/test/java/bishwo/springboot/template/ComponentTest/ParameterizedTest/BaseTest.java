@@ -4,6 +4,7 @@ import bishwo.springboot.template.ComponentTest.ParameterizedTest.Entity.TestDat
 import bishwo.springboot.template.ComponentTest.ParameterizedTest.TestConfig.TestConfigurations;
 import bishwo.springboot.template.entity.entitys.OpenAiTable;
 import bishwo.springboot.template.MainClass;
+import bishwo.springboot.template.entity.postRequeat.PostRequest;
 import bishwo.springboot.template.repository.OpenAiRepo;
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
@@ -52,8 +53,6 @@ public class BaseTest {
 
     protected ObjectMapper mapper = new ObjectMapper();
 
-    ObjectMapper objectMapper = new ObjectMapper();
-
     @Autowired
     TestRestTemplate restTemplate;
 
@@ -100,7 +99,7 @@ public class BaseTest {
     }
 
     protected TestData jsonToObj (final String json) throws JsonProcessingException {
-        return objectMapper.readValue(json, TestData.class);
+        return mapper.readValue(json, TestData.class);
     }
 
     protected void validateRequestData (TestData testData) {
@@ -117,6 +116,10 @@ public class BaseTest {
         } catch (Exception e) {
             throw new RuntimeException("Test Failed while persisting your db data");
         }
+    }
+
+    protected PostRequest setRequest (String request) throws JsonProcessingException {
+        return mapper.readValue(request, PostRequest.class);
     }
 
     protected HttpHeaders setHeaders (Map<String, String> map) {
